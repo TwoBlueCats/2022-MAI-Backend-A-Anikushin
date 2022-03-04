@@ -1,0 +1,9 @@
+server {
+    listen 80;
+    server_name localhost;
+
+    location /public/ {
+        alias /home/asanikushin/mai/backend/nginx/static/;
+        index index.html;
+    }
+}
